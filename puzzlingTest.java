@@ -15,6 +15,15 @@ public class puzzlingTest {
         System.out.println("Names greater than 5: " + puzzle.greaterThanFive(names)); 
 
         // Puzzle number 3
+        System.out.println("Part 3");
         puzzle.letters();
+
+        // Puzzle number 4
+        System.out.println("Part 4");
+        System.out.println(puzzle.randNumber());
+
+        // Puzzle number 5
+        System.out.println("Part 5");
+        System.out.println(puzzle.sortedRandNum());
     }
 }

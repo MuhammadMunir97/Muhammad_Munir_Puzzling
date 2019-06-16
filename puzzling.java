@@ -61,6 +61,29 @@ public class puzzling {
        
     }
 
+    // function for puzzle 4
+    public ArrayList<Integer> randNumber(){
+        Random rand = new Random();    
+        ArrayList<Integer> randNumbers = new ArrayList<Integer>();
+        while(randNumbers.size() < 10){
+            int randNum = rand.nextInt(100);
+            if (randNum > 54){
+                randNumbers.add(randNum);
+            }
+        }
+        return randNumbers;
+
+    }
+
+    // function for puzzle 5
+    public ArrayList<Integer> sortedRandNum(){
+        ArrayList<Integer> randNumbers = new ArrayList<Integer>();
+       // System.out.println(randNumber());
+        randNumbers = randNumber();
+        Collections.sort(randNumbers);
+        return randNumbers;
+    }
+
 
 
 }
