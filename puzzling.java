@@ -84,6 +84,27 @@ public class puzzling {
         return randNumbers;
     }
 
+    //function for puzzle 6
+    public String randString(){
+        Random rand = new Random();    
+        String str = "";
+        while(str.length() < 5){
+            int random = rand.nextInt(127);
+            if (random > 32){
+            str += Character.toString((char) random);
+            }
+        }
+        return str;
 
+    }
+
+    // function for puzzle 7
+    public ArrayList<String> randStringArr(){
+    ArrayList<String> arrString = new ArrayList<String>();
+    while (arrString.size()<10){
+        arrString.add(randString());
+    }
+    return arrString;
+    }
 
 }

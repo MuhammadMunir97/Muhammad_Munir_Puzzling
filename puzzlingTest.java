@@ -25,5 +25,13 @@ public class puzzlingTest {
         // Puzzle number 5
         System.out.println("Part 5");
         System.out.println(puzzle.sortedRandNum());
+
+        // Puzzle number 6
+        System.out.println("Part 6");
+        System.out.println(puzzle.randString());
+
+        // Puzzle number 7
+        System.out.println("Part 7");
+        System.out.println(puzzle.randStringArr());
     }
 }
