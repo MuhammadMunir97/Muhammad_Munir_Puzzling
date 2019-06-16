@@ -6,6 +6,7 @@ import java.util.Collections;
 import java.util.Random;
 
 public class puzzling {
+    // function for puzzle one
     public ArrayList<Integer> greaterThanTen(int[] arr){
         ArrayList<Integer> numbers = new ArrayList<Integer>();
         int sum = 0;
@@ -18,6 +19,8 @@ public class puzzling {
         System.out.println("sum for the array is: " + sum);
         return numbers;
     }
+
+    // function for puzzle two
     public ArrayList<String> greaterThanFive(String[] names){
         ArrayList<String> name = new ArrayList<String>();
         Random rand = new Random();
@@ -38,6 +41,26 @@ public class puzzling {
         }
         return name;
     }
+
+    //function for puzzle number 3
+    public void letters(){
+        ArrayList<String> alphabets = new ArrayList<String>();
+        for (int i = (int) 'a'; i < ('a'+26); i++) {
+            alphabets.add(Character.toString((char) i));
+        }
+        // System.out.println(alphabets);
+        Collections.shuffle(alphabets);
+        System.out.println("First letter is  " + alphabets.get(0));
+        System.out.println("last letter is  " + alphabets.get(25));
+        
+        if ( alphabets.get(0).charAt(0) ==  'a' || alphabets.get(0).charAt(0) == 'e' || alphabets.get(0).charAt(0) == 'i'  || alphabets.get(0).charAt(0) == 'o' || alphabets.get(0).charAt(0) == 'u')
+        {
+            System.out.println("first letter is a vowel");
+        }
+
+       
+    }
+
 
 
 }

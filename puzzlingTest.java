@@ -13,5 +13,8 @@ public class puzzlingTest {
         System.out.println("Part 2");
         String[] names = {"Nancy","Jinichi","Fujibayashi","Momochi","Ishikawa"};
         System.out.println("Names greater than 5: " + puzzle.greaterThanFive(names)); 
+
+        // Puzzle number 3
+        puzzle.letters();
     }
 }
